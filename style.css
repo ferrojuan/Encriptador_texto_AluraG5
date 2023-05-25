@@ -9,14 +9,11 @@ header{
 
 .contenido_header {    
     width: 100%; 
-    display: inline-flex;
+    display:flex;
     margin: 0 auto;
 }
 
-.contenido_header a {
-    display: inline-block;
-    width: 20%;
-}
+
 .contenido_header img{
     height: 75%;
 }
@@ -40,77 +37,92 @@ main{
 }
 .texto_in{
     width:600px;   
-    margin-right: 20px;    
-    color: #0A3871; 
+    margin-right: 20px; 
     border: none;    
     
 }
-.texto_out{    
-    background-color: white;
-    width:250px;
-
+.input_texto_in{   
+    background-color:#F0F5FB ;    
     
 }
-.texto_in, .texto_out{
-    border-radius: 5px;
+.texto_out textarea{    
+    background-color: white;
+    width:250px;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.texto_in, .texto_out{    
     font-family: 'Inter', sans-serif;
     padding: 10px;
-    font-size: 20px;
-    text-align: center;
+    font-size: 20px;   
     height: 600px;
     
 }
 textarea{
     height: 500px;
     width:100%;
-    border: none;
-    background-color:#F0F5FB ;
-    border-radius: 5px;
+    border: none;  
     padding: 10px;
-    font-family: 'Inter';
-    color: #0A3871;
+    font-family: 'Inter';   
     font-weight: bold;
     font-size: 20px;
-    resize: none;    
+    resize: none; 
+    color: #0A3871;  
+    text-transform: lowercase; 
+    border-radius: 25px;
 
 }
+
 textarea::placeholder{
     color:#0A3871;
 }
 textarea:active{
     border-color: #ffffff;
 }
+textarea:focus{
+    outline: none;
+}
 
-.texto_out p{
-    height: 500px;
-    font-size: 20px;
-    font-weight: bold;
+
+.informacion{
+    font-size: 12px;
+    text-align: left;
+    line-height: 18px;
+    color:#495057;
+
 }
 
 .botones{
     margin-top: 25px;
 
 }
-.botones input{
-    width:40%;
-    border:none;
+.botones button{
+    width:30%;
+    border-color: #0A3871;
     text-align: center;
-    border-radius: 5px;
-    padding: 15px 25px;
+    border-radius: 25px;
+    padding: 10px 20px;
     font-weight: bold;
     font-family: 'Inter', sans-serif;
-    margin-right: 25px;
+    margin-right: 40px;
+    cursor:pointer;
     
 }
-.botones input:hover{
+.botones button:hover{
     background-color: #84AAD0;
-    color: black;
+    color: black;   
     transition: 400;
+
 }
-.botones_encriptar{
+.btn_encriptar{
     background-color: #0A3871;
     color: #F0F5FB; 
 }
+.btn_copiar{
+    width:320px
+}
+
 footer{
     background-color: darkgray;
     /* width: 100%; */
@@ -123,7 +135,7 @@ footer{
 }
 
 @media  screen and (max-width: 768px) {
-    main, .texto_in,.texto_out,p {
+    main, .texto_in,.input_texto_out {
         width:600px;   
     }
 

@@ -26,18 +26,20 @@
     <main>
         <div class="textos">
             <div class="texto_in">
-                <textarea name="texto" id="input_texto _in" cols="auto" rows="auto" placeholder="Ingrese aqui el mensaje que quieres encriptar"></textarea>
+                <textarea  class="input_texto_in" cols="auto" rows="auto" placeholder="Ingrese texto aqui"></textarea>
+                <p class="informacion">
+                    Solo se permiten letras en minuscula y sin ascento
+                </p>
                 <div class="botones">
-                    <input class="botones_encriptar" type="submit" value="Encriptar">
-                    <input class="botones_desencriptar" type="submit" value="Desencriptar">
+                    <button class="btn_encriptar" onclick="btnEncriptar">encriptar</button>  
+                    <button class="btn_desencriptar">desencriptar</button>  
                 </div>
 
             </div>
             <div class="texto_out">
-                <p >{´texto_out´}
-                </p>
+                <textarea class="input_texto_out" cols="auto" rows="auto" ></textarea>
                 <div class="botones">
-                    <input class="botones_copiar" type="submit" value="copiar">                    
+                    <button class="btn_copiar"> copiar</button>                    
                 </div>
             </div>
         </div>
@@ -52,8 +54,6 @@
             <br>
             Grupo 5
         </p>
-
-
     </footer>
     <script src="encriptador.js"></script>
 
