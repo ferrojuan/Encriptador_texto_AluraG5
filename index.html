@@ -1,25 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <title>Encriptador_ONE_Alura</title>
 </head>
+
 <body>
 
     <header>
-
+        <div class="contenido_header">
+            <a
+                href="https://www.aluracursos.com/?gclid=CjwKCAjw67ajBhAVEiwA2g_jEPue8mUjIIJHDOCO_8m1KVLGu0anjiB7T77D0GeixImOKfV6FeFleRoC2yUQAvD_BwE"><img
+                    src="src/Logo@2x.png" alt="Logo Alura"></a>
+            <h1 class="titulo_header">Encriptador de Texto</h1>
+        </div>
     </header>
     <main>
+        <div class="textos">
+            <div class="texto_in">
+                <textarea name="texto" id=" input_texto _in" cols="90" rows="25" placeholder="Ingrese aqui el mensaje que quieres encriptar"></textarea>
 
+                <div class="botones">
+                    <input class="botones_encriptar" type="submit" value="Encriptar">
+                    <input class="botones_desencriptar" type="submit" value="Desencriptar">
+                </div>
+
+            </div>
+            <div class="texto_out">
+                <p >Aun no has ingresado texto para ser encriptado
+                </p>
+                <div class="botones">
+                    <input class="botones_copiar" type="submit" value="copiar">                    
+                </div>
+            </div>
+        </div>
     </main>
+
     <footer>
-        
+        <img class="logo_footer" src="src/Logo.png" alt="Logo Alura">
+
+        <p>Challenge - Encriptador de texto
+            <br>
+            Alura Latam - Oracle Next Education
+            <br>
+            Grupo 5
+        </p>
+
+
     </footer>
-    
+    <script src="encriptador.js"></script>
+
 </body>
+
 </html>

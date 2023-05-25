@@ -1,0 +1,126 @@
+body, .texto_in {
+    font-family: 'Inter', sans-serif;
+    background-color: #F0F5FB;
+}
+header{     
+    background-color: #84AAD0;
+    padding: 20px;   
+}
+
+.contenido_header {    
+    width: 100%; 
+    display: inline-flex;
+    margin: 0 auto;
+}
+
+.contenido_header a {
+    display: inline-block;
+    width: 20%;
+}
+.contenido_header img{
+    height: 75%;
+}
+
+.titulo_header {
+    color: #0A3871;
+    font-weight: bold;        
+    font-size: 40px;
+    width: 50%; 
+    text-align: center;    
+    text-transform: uppercase;
+    padding-top: 10px;
+    
+}
+main{
+    width:940px;
+    margin: 40px auto;    
+}
+.textos{
+    display: inline-flex;
+}
+.texto_in{
+    width:75%;   
+    margin-right: 5%;    
+    color: #0A3871; 
+    border: none;    
+    
+}
+.texto_out{    
+    background-color: white;
+    
+}
+.texto_in, .texto_out{
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    height: 600px;
+    
+}
+textarea{
+    height: 500px;
+    width:100%;
+    border: none;
+    background-color:#F0F5FB ;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Inter';
+    color: #0A3871;
+    font-weight: bold;
+    font-size: 20px;
+    resize: none;    
+
+}
+textarea::placeholder{
+    color:#0A3871;
+}
+textarea:active{
+    border-color: #ffffff;
+}
+
+.texto_out p{
+    height: 500px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.botones{
+    margin-top: 25px;
+
+}
+.botones input{
+    width:40%;
+    border:none;
+    text-align: center;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    margin-right: 25px;
+    
+}
+.botones input:hover{
+    background-color: #84AAD0;
+    color: black;
+    transition: 400;
+}
+.botones_encriptar{
+    background-color: #0A3871;
+    color: #F0F5FB; 
+}
+
+
+
+
+
+footer{
+    background-color: darkgray;
+    width: 100%;
+    height:100px;
+    text-align: center;
+    padding: 30px;
+    color:white;
+    font-weight: bold;
+    line-height: 25px;
+}
