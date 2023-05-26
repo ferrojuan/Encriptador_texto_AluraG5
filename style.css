@@ -82,13 +82,9 @@ textarea{
 textarea::placeholder{
     color:#0A3871;
 }
-textarea:active{
-    border-color: #ffffff;
-}
 textarea:focus{
     outline: none;
 }
-
 
 .informacion{
     font-size: 12px;
@@ -124,13 +120,10 @@ textarea:focus{
     background-color: #0A3871;
     color: #F0F5FB; 
 }
-.btn_copiar{
-    width:320px
-}
+
 
 footer{
-    background-color: darkgray;
-    
+    background-color: darkgray;    
     text-align: center;
     padding: 30px;
     color:white;    
