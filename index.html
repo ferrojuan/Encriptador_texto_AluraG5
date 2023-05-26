@@ -26,26 +26,28 @@
     <main>
         <div class="textos">
             <div class="texto_in">
-                <textarea  class="input_texto_in" cols="auto" rows="auto" placeholder="Ingrese texto aqui"></textarea>
+                <textarea  class="input_texto_in" cols="auto" rows="auto" placeholder="Ingrese texto aqui" required></textarea>
                 <p class="informacion">
                     Solo se permiten letras en minuscula y sin ascento
                 </p>
                 <div class="botones">
-                    <button class="btn_encriptar" onclick="btnEncriptar">encriptar</button>  
-                    <button class="btn_desencriptar">desencriptar</button>  
+                    <button class="btn_encriptar" onclick="btnEncriptar()" placeholder="Aqui veras el mensaje que quieres Encriptar o desencriptar">encriptar</button>  
+                    <button class="btn_desencriptar" onclick="btnDesencriptar()">desencriptar</button>  
                 </div>
 
             </div>
             <div class="texto_out">
                 <textarea class="input_texto_out" cols="auto" rows="auto" ></textarea>
                 <div class="botones">
-                    <button class="btn_copiar"> copiar</button>                    
+                    <button class="btn_copiar" onclick="btnCopiar()"> copiar</button>                    
                 </div>
             </div>
         </div>
     </main>
 
     <footer>
+
+        
         <img class="logo_footer" src="src/Logo.png" alt="Logo Alura">
 
         <p>Challenge - Encriptador de texto
@@ -53,10 +55,13 @@
             Alura Latam - Oracle Next Education
             <br>
             Grupo 5
+            <br>
+            Juan David Ferro
+            <br>
+            Bogota - Colombia
         </p>
     </footer>
     <script src="encriptador.js"></script>
 
 </body>
-
 </html>
