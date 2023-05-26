@@ -53,17 +53,16 @@ function btnDesencriptar() {
 
 
 function copiar(data) {
-    navigator.clipboard.writeText(data);
-    textoIn.value = "";
 
+    if(data == ""){
+        alert("No hay mensaje para copiar")
+    }else{navigator.clipboard.writeText(data);
+        textoIn.value = "";
+        alert("copiado"); 
+    }
 }
 function btnCopiar() {
-
-    copiar(textoOut.value); 
-     
-    
-
-
+    copiar(textoOut.value);   
 }
 
 
